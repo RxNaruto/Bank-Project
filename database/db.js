@@ -8,12 +8,12 @@ const AdminSchema= new mongoose.Schema({
 
 const UserSchema= new mongoose.Schema({
     Name: String,
-    PhoneNumber: String,
+    MobileNumber: String,
     username: String,
     password: String,
     tokenId: String,
     email: String,
-    BankBalance: String,
+    BankBalance: Number,
     
 
 })
