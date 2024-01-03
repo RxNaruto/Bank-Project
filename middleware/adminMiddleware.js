@@ -39,3 +39,8 @@ const adminAuthMiddleWare=(req,res,next)=>{
     })
     
 }
+module.exports={
+    adminMiddleware,
+    adminAuthMiddleWare
+
+}
