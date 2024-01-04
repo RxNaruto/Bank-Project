@@ -3,7 +3,7 @@ const router=express.Router();
 const {adminMiddleware,adminAuthMiddleWare}=require("../middleware/adminMiddleware");
 
 const {Admin,User}=require("../database/db");
-router.listen(3001);
+
 
 router.post("/createAdmin",adminMiddleware,async (req,res)=>{
     const username=req.body.username;
