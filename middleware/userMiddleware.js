@@ -1,5 +1,5 @@
 const zod = require('zod');
-const { Admin, User } = require("../database")
+const { User } = require("../database/db")
 
 const unameSchema = zod.string().min(5);
 const passSchema = zod.string().min(8);

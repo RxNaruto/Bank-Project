@@ -1,6 +1,7 @@
 const express=require('express');
 const router=express.Router();
 const {userMiddleware,userAuthMiddleWare}=require("../middleware/userMiddleware");
+const{adminAuthMiddleWare}=require("../middleware/adminMiddleware");
 const {User}=require("../database/db");
 
 router.post("/createUser",userMiddleware,async (req,res)=>{
